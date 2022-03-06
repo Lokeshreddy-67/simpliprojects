@@ -1,0 +1,21 @@
+package methods;
+
+public class Callbyvalue {
+	int a=150;
+	private String val;
+	public int operation(int val) {
+	 val=val*10;
+		return(val);
+	}
+
+	public static void main(String[] args) {
+		Callbyvalue op=new Callbyvalue();
+		System.out.println("before:" +op.val);
+		op.operation(100);
+		System.out.println("After:"+op.val);
+		
+		
+
+	}
+
+}
